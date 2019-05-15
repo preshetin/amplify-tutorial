@@ -1,0 +1,41 @@
+{
+    "paths": [
+        {
+            "name": "/items",
+            "lambdaFunction": "coolItems",
+            "privacy": {
+                "private": true,
+                "auth": [
+                    "/POST",
+                    "/GET",
+                    "/PUT",
+                    "/PATCH",
+                    "/DELETE"
+                ]
+            }
+        }
+    ],
+    "resourceName": "myFirstAwsApiInAmplify",
+    "apiName": "myFirstAwsApiInAmplify",
+    "functionArns": [
+        {
+            "lambdaFunction": "coolItems"
+        }
+    ],
+    "privacy": {
+        "auth": 1,
+        "unauth": 0,
+        "authRoleName": "amplify-tutorial-dev-20190514151950-authRole",
+        "unAuthRoleName": "amplify-tutorial-dev-20190514151950-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "coolItems",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}
