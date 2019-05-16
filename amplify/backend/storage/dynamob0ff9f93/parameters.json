@@ -1,0 +1,7 @@
+{
+    "tableName": "courses",
+    "partitionKeyName": "userId",
+    "partitionKeyType": "S",
+    "sortKeyName": "courseId",
+    "sortKeyType": "S"
+}

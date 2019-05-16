@@ -12,20 +12,20 @@
 		}
 	},
 	"storage": {
-		"coolItems": {
+		"dynamob0ff9f93": {
 			"service": "DynamoDB",
 			"providerPlugin": "awscloudformation"
 		}
 	},
 	"function": {
-		"coolItems": {
+		"myfunction": {
 			"service": "Lambda",
 			"providerPlugin": "awscloudformation",
 			"build": true,
 			"dependsOn": [
 				{
 					"category": "storage",
-					"resourceName": "coolItems",
+					"resourceName": "dynamob0ff9f93",
 					"attributes": [
 						"Name",
 						"Arn"
@@ -35,13 +35,13 @@
 		}
 	},
 	"api": {
-		"myFirstAwsApiInAmplify": {
+		"myapi": {
 			"service": "API Gateway",
 			"providerPlugin": "awscloudformation",
 			"dependsOn": [
 				{
 					"category": "function",
-					"resourceName": "coolItems",
+					"resourceName": "myfunction",
 					"attributes": [
 						"Name",
 						"Arn"

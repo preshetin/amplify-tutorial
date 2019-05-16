@@ -1,8 +1,8 @@
 {
     "paths": [
         {
-            "name": "/items",
-            "lambdaFunction": "coolItems",
+            "name": "/courses",
+            "lambdaFunction": "myfunction",
             "privacy": {
                 "private": true,
                 "auth": [
@@ -15,11 +15,11 @@
             }
         }
     ],
-    "resourceName": "myFirstAwsApiInAmplify",
-    "apiName": "myFirstAwsApiInAmplify",
+    "resourceName": "myapi",
+    "apiName": "myapi",
     "functionArns": [
         {
-            "lambdaFunction": "coolItems"
+            "lambdaFunction": "myfunction"
         }
     ],
     "privacy": {
@@ -31,7 +31,7 @@
     "dependsOn": [
         {
             "category": "function",
-            "resourceName": "coolItems",
+            "resourceName": "myfunction",
             "attributes": [
                 "Name",
                 "Arn"

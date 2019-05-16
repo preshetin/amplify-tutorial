@@ -1,5 +1,0 @@
-{
-    "tableName": "coolItems",
-    "partitionKeyName": "title",
-    "partitionKeyType": "S"
-}
