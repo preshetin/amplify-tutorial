@@ -10,10 +10,12 @@ function App() {
 
   const post = async () => {
     console.log('calling api');
-    const response = await API.post('myFirstAwsApiInAmplify', '/items', {
+    const response = await API.post('myapi', '/courses', {
       body: {
-        title: '1',
-        description: 'hello amplify!'
+        userId: 'user-1',
+        courseId: 'course-2',
+        title: 'second course',
+        date: 11111
       }
     });
     alert(JSON.stringify(response, null, 2));
@@ -21,13 +23,13 @@ function App() {
 
   const get = async () => {
     console.log('calling api');
-    const response = await API.get('myFirstAwsApiInAmplify', '/items/object/1');
+    const response = await API.get('myapi', '/courses/object/1');
     alert(JSON.stringify(response, null, 2));
   }
 
   const list = async () => {
     console.log('calling api');
-    const response = await API.get('myFirstAwsApiInAmplify', '/items/1');
+    const response = await API.get('myapi', '/courses/user-1');
     alert(JSON.stringify(response, null, 2));
   }
 

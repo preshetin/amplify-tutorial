@@ -736,7 +736,7 @@
         
         
         
-      "DeploymentAPIGWmyapi": {
+      "DeploymentAPIGWmyapi4ec168b1": {
         "Type": "AWS::ApiGateway::Deployment",
         "Properties": {
           "Description": "The Development stage deployment of your API.",
