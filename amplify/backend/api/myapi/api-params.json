@@ -13,6 +13,13 @@
                     "/DELETE"
                 ]
             }
+        },
+        {
+            "name": "/create-anonymous",
+            "lambdaFunction": "myfunction",
+            "privacy": {
+                "open": true
+            }
         }
     ],
     "resourceName": "myapi",
@@ -38,5 +45,5 @@
             ]
         }
     ],
-    "uuid": "4ec168b1"
+    "uuid": "237ae007"
 }

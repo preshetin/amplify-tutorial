@@ -68,7 +68,7 @@
 				"Timeout": "25",
 				"Code": {
 					"S3Bucket": "amplify-tutorial-dev-20190514151950-deployment",
-					"S3Key": "amplify-builds/myfunction-1558039060-latest-build.zip"
+					"S3Key": "amplify-builds/myfunction-1558041692-latest-build.zip"
 				}
 			}
 		},
